@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artifacts",
+  "info": {
+    "singularName": "artifact",
+    "pluralName": "artifacts",
+    "displayName": "Artifacts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ArtifactName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ArtifactDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "ArtifactImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

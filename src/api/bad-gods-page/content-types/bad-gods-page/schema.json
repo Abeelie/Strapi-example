@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "bad_gods_pages",
+  "info": {
+    "singularName": "bad-gods-page",
+    "pluralName": "bad-gods-pages",
+    "displayName": "Bad-Gods-Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bad_god_descriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bad-god-description.bad-god-description"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

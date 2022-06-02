@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bad_god_descriptions",
+  "info": {
+    "singularName": "bad-god-description",
+    "pluralName": "bad-god-descriptions",
+    "displayName": "Bad-God-Description"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

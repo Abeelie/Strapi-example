@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "uid",
+      "required": true
+    },
+    "HeroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Description1": {
+      "type": "richtext",
+      "required": true
+    },
+    "DescriptionImage1": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description2": {
+      "type": "richtext",
+      "required": true
+    },
+    "DescriptionImage2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "HeroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "Period1": {
+      "type": "string"
+    },
+    "Period2": {
+      "type": "string"
+    }
+  }
+}

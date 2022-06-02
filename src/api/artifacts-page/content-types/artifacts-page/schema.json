@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "artifacts_pages",
+  "info": {
+    "singularName": "artifacts-page",
+    "pluralName": "artifacts-pages",
+    "displayName": "ArtifactsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "artifacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artifact.artifact"
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
